@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="my">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Package Store</title>
+
+  <!-- အင်တာနက်မလိုဘဲ ကိုယ်ပိုင်ရေးထားသော CSS -->
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+    }
+
+    body {
+      background-color: #f9fafb;
+      color: #1f2937;
+      padding: 16px;
+    }
+
+    .container {
+      max-width: 440px;
+      margin: 0 auto;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 16px;
+    }
+
+    .header h1 {
+      font-size: 18px;
+      font-weight: bold;
+      color: #374151;
+    }
+
+    /* Icon ခလုတ်အတွက် */
+    .history-btn {
+      background-color: #eff6ff;
+      color: #2563eb;
+      padding: 10px 12px;
+      border-radius: 50%;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    /* Grid 2 Columns */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+    }
+
+    /* Box ပုံစံ */
+    .box {
+      background-color: #f0f9ff;
+      border: 1px solid #e0f2fe;
+      border-radius: 16px;
+      padding: 14px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .mb-title {
+      font-size: 17px;
+      font-weight: bold;
+      color: #111827;
+      margin-bottom: 2px;
+    }
+
+    .sub-text {
+      font-size: 11px;
+      color: #6b7280;
+      margin-bottom: 12px;
+    }
+
+    .points {
+      color: #2563eb;
+      font-size: 13px;
+      font-weight: 500;
+      margin-bottom: 8px;
+    }
+
+    .details {
+      display: flex;
+      justify-content: space-between;
+      font-size: 13px;
+      color: #4b5563;
+      margin-bottom: 14px;
+    }
+
+    .price {
+      font-weight: bold;
+    }
+
+    /* ဝယ်ရန် ခလုတ် */
+    .buy-btn {
+      display: block;
+      text-align: center;
+      background-color: #22d3ee;
+      color: white;
+      font-weight: 600;
+      padding: 8px;
+      border-radius: 12px;
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+
+    .buy-btn:hover {
+      background-color: #06b6d4;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <!-- Header & History Icon -->
+    <header class="header">
+      <h1>Atom Package ဈေးဆိုင်</h1>
+      <!-- ဤနေရာတွင် Pending/Complete ကြည့်ရန် Link ထည့်ပါ -->
+      <a href="#" class="history-btn" title="မှတ်တမ်းကြည့်ရန်">🕒</a>
+    </header>
+
+    <!-- Main Boxes (2 Columns, 4 Rows -> 8 Boxes) -->
+    <main class="grid">
+
+      <!-- Box 1 -->
+      <div class="box">
+        <div>
+          <div class="mb-title">Anynet 100 min</div>
+          <div class="sub-text">(ကြိုက်ရာခေါ်)</div>
+          <div class="points">⚡ 0 ပွိုင့်</div>
+          <div class="details">
+            <span>60 Days</span>
+            <span class="price">1,600 Ks</span>
+          </div>
+        </div>
+        <a href="#" class="buy-btn">ဝယ်ရန်</a>
+      </div>
+
+      <!-- Box 2 -->
+      <div class="box">
+        <div>
+          <div class="mb-title">Anynet 150 min</div>
+          <div class="sub-text">(ကြိုက်ရာခေါ်)</div>
+          <div class="points">⚡ 0 ပွိုင့်</div>
+          <div class="details">
+            <span>60 Days</span>
+            <span class="price">2,100 Ks</span>
+          </div>
+        </div>
+        <a href="#" class="buy-btn">ဝယ်ရန်</a>
+      </div>
+
+      <!-- Box 3 -->
+      <div class="box">
+        <div>
+          <div class="mb-title">onnet 150 min</div>
+          <div class="sub-text">(Atom အချင်းချင်း)</div>
+          <div class="points">⚡ 0 ပွိုင့်</div>
+          <div class="details">
+            <span>60 Days</span>
+            <span class="price">1,700 Ks</span>
+          </div>
+        </div>
+        <a href="#" class="buy-btn">ဝယ်ရန်</a>
+      </div>
+
+      <!-- Box 4 -->
+      <div class="box">
+        <div>
+          <div class="mb-title">999 MB + 500 bill</div>
+          <div class="sub-text">(ရှယ်စုဘူး)</div>
+          <div class="points">⚡ 0 ပွိုင့်</div>
+          <div class="details">
+            <span>30 Days</span>
+            <span class="price">1,600 Ks</span>
+          </div>
+        </div>
+        <a href="#" class="buy-btn">ဝယ်ရန်</a>
+      </div>
+
+      <!-- Box 5 -->
+      <div class="box">
+        <div>
+          <div class="mb-title">500 point</div>
+          <div class="sub-text">(ရှယ်စုဘူး)</div>
+          <div class="points">⚡ 0 ပွိုင့်</div>
+          <div class="details">
+            <span>30 Days</span>
+            <span class="price">1000 Ks</span>
+          </div>
+        </div>
+        <a href="#" class="buy-btn">ဝယ်ရန်</a>
+      </div>
+
+      <!-- Box 6 -->
+      <div class="box">
+        <div>
+          <div class="mb-title">24 GB + 8000 min + 5000 sms</div>
+          <div class="sub-text">(ရှယ်စုဘူး)</div>
+          <div class="points">⚡ 0 ပွိုင့်</div>
+          <div class="details">
+            <span>30 Days</span>
+            <span class="price">16,000 Ks</span>
+          </div>
+        </div>
+        <a href="#" class="buy-btn">ဝယ်ရန်</a>
+      </div>
+
+      <!-- Box 7 -->
+      <div class="box">
+        <div>
+          <div class="mb-title">138 GB</div>
+          <div class="sub-text">(ရှယ်စုဘူး)</div>
+          <div class="points">⚡ 0 ပွိုင့်</div>
+          <div class="details">
+            <span>30 Days</span>
+            <span class="price">28,000 Ks</span>
+          </div>
+        </div>
+        <a href="#" class="buy-btn">ဝယ်ရန်</a>
+      </div>
+
+      <!-- Box 8 -->
+      <div class="box">
+        <div>
+          <div class="mb-title">13.35 GB + 1000 Atom min + 50 Anynet min</div>
+          <div class="sub-text">(ရုပ်စုဘူး)</li>
+            <div class="points">⚡ 0 ပွိုင့်</div>
+            <div class="details">
+              <span>30 Days</span>
+              <span class="price">16,000 Ks</span>
+            </div>
+          </div>
+          <a href="#" class="buy-btn">ဝယ်ရန်</a>
+        </div>
+
+    </main>
+  </div>
+
+</body>
+
+</html>
